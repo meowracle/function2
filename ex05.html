@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex05</title>
+</head>
+<body>
+<script>
+    function findMax(a,b,c) {
+        let max=a;
+        if (a>b) {
+            if (a<c) {
+                max=c;
+            }
+        } else if (b>c) {
+            max = b;
+        } else {
+            max = c;
+        }
+        return max;
+    }
+    let num1=parseInt(prompt("moi nhap vao so thu nhat: "));
+    let num2=parseInt(prompt("moi nhap vao so thu hai: "));
+    let num3=parseInt(prompt("moi nhap vao so thu ba: "));
+    alert("so lon nhat la: "+findMax(num1,num2,num3));
+</script>
+</body>
+</html>

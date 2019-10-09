@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex06</title>
+</head>
+<body>
+<script>
+    function checkNum(a) {
+        if (a==parseInt(a)){
+            if (a<=0) {
+                return false;
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    }
+    let num=prompt("moi nhap vao mot so");
+    if (checkNum(num)==true){
+        alert("so vua nhap la so nguyen duong");
+    } else {
+        alert("so vua nhap khong phai so nguyen duong");
+    }
+</script>
+</body>
+</html>

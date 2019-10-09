@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex08</title>
+</head>
+<body>
+<script>
+    function swapArray(num) {
+        let a=[]
+        for (let i=0;i<num; i++){
+            a.push(parseFloat(prompt("moi nhap vao phan tu thu "+(i+1))));
+        }
+        return a.reverse();
+    }
+    let amount=parseInt(prompt("moi nhap vao so phan tu cua mang: "));
+    alert("ket qua sau khi dao mang"+swapArray(amount));
+</script>
+</body>
+</html>

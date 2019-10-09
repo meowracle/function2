@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex09</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("moi nhap vao so phan tu cua mang"));
+    alert(checkArray(a));
+    function checkArray(num) {
+        var arr = [];
+        for (var i = 0; i < num; i++) {
+            arr.push(prompt("Moi nhap vao phan tu thu " + (i + 1)));
+        }
+        var count = [];
+        var elementTest = prompt("moi nhap vao mot phan tu de kiem tra");
+        if (arr.indexOf(elementTest)==-1) {
+            count=-1
+        } else {
+            for (j=0;j<num;j++){
+                if (arr[j]==elementTest){
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+</script>
+</body>
+</html>

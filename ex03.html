@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex03</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("moi nhap vao mot so"));
+    while (a<=0) {
+        a=parseInt(prompt("moi nhap lai"));
+    }
+    alert("giai thua cua "+a+" la: "+factorial(a));
+
+    function factorial(num) {
+        var result=1;
+        for (var i=1; i<=num; i++) {
+            result*=i;
+        }
+        return result;
+    }
+</script>
+</body>
+</html>

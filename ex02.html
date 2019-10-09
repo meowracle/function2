@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex02</title>
+</head>
+<body>
+<script>
+    let radius=parseInt(prompt("moi nhap vao ban kinh hinh tron"));
+    alert("chu vi hinh tron la: "+parseInt(perimeterCircle(radius)));
+    alert("dien tich hinh tron la: "+parseInt(areaCircle(radius)));
+    function perimeterCircle(a) {
+        return 2*Math.PI*a;
+    }
+    function areaCircle(a) {
+        return Math.PI*Math.pow(a,2)
+    }
+</script>
+</body>
+</html>
